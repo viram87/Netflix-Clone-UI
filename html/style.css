@@ -1,0 +1,261 @@
+:root {
+  --primary-color: #e50914;
+  --dark-color: #141414;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #000;
+  color: #c9c9c9;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+a {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 22px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+img {
+  width: 100%;
+}
+
+.showcase {
+  width: 100%;
+  height: 98vh;
+  position: relative;
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/d0f20efa-f2f3-49d4-92b2-b3b1f6312af5/IN-en-20211026-popsignuptwoweeks-perspective_alpha_website_small.jpg)
+    no-repeat center center/cover;
+}
+
+.v1 {
+  /* left: -5%; */
+  margin-left: -87%;
+  top: 5%;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+  padding: 0%;
+  position: relative;
+}
+
+.showcase-top {
+  position: relative;
+  height: 90px;
+  z-index: 2;
+}
+
+.showcase-top img {
+  width: 140px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase-top a {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  right: 50%;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  margin-top: 5px;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 1.3rem;
+  padding: 1rem 1.7rem;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.showcase-content {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  /* display: flex; */
+  flex-direction: column;
+  margin-top: 10rem;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.showcase-content h1 {
+  font-size: 70px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+
+  line-height: 0.7;
+  margin: 0 0 2rem;
+}
+
+.showcase-content p {
+  font-size: 25px;
+}
+
+.showcase-content h {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000;
+}
+
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+}
+
+.container {
+  display: grid;
+  max-width: 70%;
+  margin: auto;
+
+  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tab-items {
+  margin-top: 1rem;
+  cursor: pointer;
+  color: gray;
+}
+
+.tab-items p {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.tab-items i:hover {
+  color: white;
+}
+
+/* .container i{
+  color: white;
+} */
+
+#tab-content-1 .tab-1-content-inner {
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.w1 {
+  width: 500px;
+  margin-top: 40px;
+}
+
+.w1 p {
+  text-transform: capitalize;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.w2 {
+  width: 500px;
+}
+
+.tab-border {
+  border-bottom: var(--primary-color) 4px solid;
+}
+
+#tab-content-3 .text-center {
+  width: 618px;
+  text-align: center;
+  margin-left: 280px;
+  align-content: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.text-lg {
+  font-size: 28px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
+.bt1 {
+  width: 250px;
+  height: 40px;
+  border-radius: 7px;
+}
+
+.text-center a {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+  position: relative;
+}
+.text-center p {
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
+}
+
