@@ -50,7 +50,7 @@ img {
 
 .showcase {
   width: 100%;
-  height: 98vh;
+  height: 100vh;
   position: relative;
   background: url(https://assets.nflxext.com/ffe/siteui/vlv3/b77751c7-0e02-4941-af39-30514ff6b3e2/d0f20efa-f2f3-49d4-92b2-b3b1f6312af5/IN-en-20211026-popsignuptwoweeks-perspective_alpha_website_small.jpg)
     no-repeat center center/cover;
@@ -166,7 +166,7 @@ img {
 
 .container {
   display: grid;
-  max-width: 70%;
+  max-width: 85%;
   margin: auto;
 
   overflow: hidden;
@@ -178,13 +178,13 @@ img {
 }
 
 .tab-items {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   cursor: pointer;
   color: gray;
 }
 
 .tab-items p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   cursor: pointer;
   font-size: 18px;
 }
@@ -229,7 +229,7 @@ img {
 #tab-content-3 .text-center {
   width: 618px;
   text-align: center;
-  margin-left: 280px;
+  margin-left: 350px;
   align-content: center;
   margin-top: 70px;
   margin-bottom: 70px;
@@ -259,3 +259,28 @@ img {
     "Lucida Sans Unicode", "Geneva", "Verdana", "sans-serif";
 }
 
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+.table tbody tr td {
+  color: #999;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
